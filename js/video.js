@@ -72,11 +72,16 @@ document.querySelector("#old").addEventListener("click", function() {
 	// video = document.getElementsByTagName('body');
 	// document.body.style = document.getElementsByClassName('.oldTime');
 	// document.body.classList.add('oldTime');
-	document.body.className = 'oldTime';
+	// document.body.className = 'oldTime';
+	// this applied it to the body, not the video!!!!
+	video = document.getElementById('myVideo');
+	video.className = 'oldTime';
 	// is this right?
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	document.body.classList.remove('oldTime');
+	// document.body.classList.remove('oldTime');
+	video = document.getElementById('myVideo');
+	video.classList.remove('oldTime');
 	
 });
