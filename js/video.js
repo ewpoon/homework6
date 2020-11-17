@@ -9,6 +9,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video = document.getElementById("myVideo");
 	video.play();
+	document.getElementById('volume').innerHTML = '100%';
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
